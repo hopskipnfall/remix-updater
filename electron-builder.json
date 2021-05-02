@@ -20,7 +20,8 @@
     "!angular.json",
     "!tsconfig*.json",
     "!tslint.json",
-    "!.eslintrc.json",
+    "!.eslintrc.js",
+    "!.prettierrc.js",
     "!karma.conf.js",
     "!angular.webpack.js",
     "!*.map"
