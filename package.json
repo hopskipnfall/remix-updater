@@ -1,13 +1,16 @@
 {
-  "name": "angular-electron",
-  "version": "9.0.7",
-  "description": "Angular 11 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "name": "remix-updater",
+  "version": "0.0.1",
+  "description": "Lightweight cross-platform app to keep your copy of Smash Remix up-to-date",
+  "homepage": "https://github.com/hopskipnfall/remix-updater",
   "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
+    "name": "Jonn",
+    "email": "jonn@jonnjonnjonn.com"
   },
   "keywords": [
+    "smash64",
+    "super smash bros",
+    "smash remix",
     "angular",
     "angular 11",
     "electron",
@@ -15,10 +18,7 @@
     "typescript",
     "spectron",
     "eslint",
-    "sass",
-    "windows",
-    "mac",
-    "linux"
+    "sass"
   ],
   "main": "main.js",
   "private": true,
