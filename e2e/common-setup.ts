@@ -25,7 +25,7 @@ export default function setup(): void {
       // and the package.json located 1 level above.
       args: [path.join(__dirname, '..')],
       webdriverOptions: {},
-      startTimeout: 10*1000, // 10s.
+      startTimeout: 10 * 1000, // 10s.
     });
 
     await this.app.start();

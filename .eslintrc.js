@@ -8,18 +8,14 @@ module.exports = {
   },
   overrides: [
     {
-      files: [
-        "*.component.html"
-      ],
-      "parser": "@angular-eslint/template-parser",
-      "plugins": [
-        "@angular-eslint/template"
-      ],
-      "rules": {
-        "@angular-eslint/template/banana-in-box": "error",
-        "@angular-eslint/template/no-negated-async": "error"
-      }
-    }
+      files: ['*.component.html'],
+      parser: '@angular-eslint/template-parser',
+      plugins: ['@angular-eslint/template'],
+      rules: {
+        '@angular-eslint/template/banana-in-box': 'error',
+        '@angular-eslint/template/no-negated-async': 'error',
+      },
+    },
   ],
   extends: [
     'airbnb-typescript/base',
@@ -74,10 +70,5 @@ module.exports = {
     'prefer-destructuring': ['error', { object: true, array: false }],
     'no-param-reassign': 'off',
   },
-  ignorePatterns: [
-    'dist/**',
-    'coverage/**',
-    'src/**/*.js',
-    'main.js',
-  ],
+  ignorePatterns: ['dist/**', 'coverage/**', 'src/**/*.js', 'main.js'],
 };
