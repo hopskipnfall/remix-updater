@@ -99,7 +99,8 @@ E2E Test scripts can be found in `e2e` folder.
 Note: To make it work behind a proxy, you can add this proxy exception in your terminal  
 `export {no_proxy,NO_PROXY}="127.0.0.1,localhost"`
 
-Credits:
+# Credits
+
  - The ROM patching logic is adapted from [Marc Robledo](marc_homepage)'s [RomPatcher.js][rompatcherjs] under the MIT license.
  - This project was bootstrapped using [Maxime GRIS][maxime]' [angular-electron][angular_electron] template.
 
