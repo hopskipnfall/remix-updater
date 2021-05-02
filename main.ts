@@ -6,8 +6,8 @@ import * as url from 'url';
 require('@electron/remote/main').initialize();
 
 let win: BrowserWindow = null;
-const args = process.argv.slice(1),
-  serve = args.some((val) => val === '--serve');
+const args = process.argv.slice(1);
+const serve = args.some((val) => val === '--serve');
 
 function createWindow(): BrowserWindow {
   const electronScreen = screen;
@@ -21,7 +21,7 @@ function createWindow(): BrowserWindow {
     height: size.height,
     webPreferences: {
       nodeIntegration: true,
-      allowRunningInsecureContent: serve ? true : false,
+      allowRunningInsecureContent: !!serve,
       contextIsolation: false, // false if you want to run 2e2 test with Spectron
       enableRemoteModule: true, // true if you want to run 2e2 test  with Spectron or use remote module in renderer context (ie. Angular)
     },
@@ -30,7 +30,9 @@ function createWindow(): BrowserWindow {
   if (serve) {
     win.webContents.openDevTools();
 
+    // eslint-disable-next-line global-require,import/no-dynamic-require
     require('electron-reload')(__dirname, {
+      // eslint-disable-next-line global-require,import/no-dynamic-require
       electron: require(`${__dirname}/node_modules/electron`),
     });
     win.loadURL('http://localhost:4200');
