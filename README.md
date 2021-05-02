@@ -12,7 +12,7 @@
 [![Star on GitHub][github-star-badge]][github-star]
 [![Tweet][twitter-badge]][twitter]
 
-# remix-updater
+# Remix Updater
 
 Remix Updater is an Electron-based desktop app to keep your [Smash Remix][smashremix] ROM and associated files up-to-date as patches are released.
 
