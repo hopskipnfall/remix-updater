@@ -70,5 +70,11 @@ module.exports = {
     'prefer-destructuring': ['error', { object: true, array: false }],
     'no-param-reassign': 'off',
   },
-  ignorePatterns: ['dist/**', 'coverage/**', 'src/**/*.js', 'main.js'],
+  ignorePatterns: [
+    'dist/**',
+    'coverage/**',
+    'src/**/*.js',
+    'main.js',
+    'src/polyfills.ts',
+  ],
 };

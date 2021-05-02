@@ -1,1 +1,6 @@
 src/test.ts
+dist/**
+coverage/**
+src/**/*.js
+main.js
+src/polyfills.ts
