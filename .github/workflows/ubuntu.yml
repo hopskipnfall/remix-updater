@@ -48,18 +48,21 @@ jobs:
     - name: Install Dependencies
       run: npm i
 
+    - name: Run Electron install script
+      run: node node_modules/electron/install.js
+
     # - name: Check lint
     #   run: npm run lint
 
     - name: Build the app
       run: npm run electron:build
 
-    - name: Run headless unit test
+    - name: Run headless unit tests
       uses: GabrielBB/xvfb-action@v1
       with:
         run: npm test
 
-    - name: Run headless unit test
+    - name: Run headless e2e tests
       uses: GabrielBB/xvfb-action@v1
       with:
         run: npm run e2e
