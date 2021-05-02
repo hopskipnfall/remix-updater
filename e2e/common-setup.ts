@@ -1,4 +1,4 @@
-const Application = require('spectron').Application;
+const { Application } = require('spectron');
 const electronPath = require('electron'); // Require Electron from the binaries included in node_modules.
 const path = require('path');
 
@@ -24,7 +24,8 @@ export default function setup(): void {
       // The following line tells spectron to look and use the main.js file
       // and the package.json located 1 level above.
       args: [path.join(__dirname, '..')],
-      webdriverOptions: {}
+      webdriverOptions: {},
+      startTimeout: 10 * 1000, // 10s.
     });
 
     await this.app.start();
