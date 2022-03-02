@@ -89,7 +89,7 @@
     "eslint-plugin-unicorn": "31.0.0",
     "jasmine-core": "3.7.1",
     "jasmine-spec-reporter": "6.0.0",
-    "karma": "6.2.0",
+    "karma": "6.3.16",
     "karma-coverage-istanbul-reporter": "3.0.3",
     "karma-electron": "6.3.3",
     "karma-jasmine": "4.0.1",
